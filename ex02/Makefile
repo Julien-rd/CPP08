@@ -6,7 +6,7 @@ NAME		= ex02
 OBJDIR		= obj
 DEPDIR		= $(OBJDIR)
 
-SRCS		= main.cpp #MutantStack.cpp
+SRCS		= main.cpp
 
 OBJS		= $(addprefix $(OBJDIR)/, $(SRCS:.cpp=.o))
 DEPS		= $(addprefix $(DEPDIR)/, $(SRCS:.cpp=.d))

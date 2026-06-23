@@ -1,6 +1,5 @@
 #include "Span.hpp"
 #include <exception>
-#include <iostream>
 #include <limits>
 #include <stdlib.h>
 
@@ -8,8 +7,10 @@ Span::Span(unsigned int size) : _size(size) {}
 
 Span::Span() : _size(0) {}
 
-Span::Span(const Span &other) : _size(other._size), _container(other._container) {
-};
+Span::Span(const Span &other)
+    : _size(other._size), _container(other._container) {}
+
+Span::~Span() {}
 
 Span &Span::operator=(const Span &other) {
   if (this == &other)
